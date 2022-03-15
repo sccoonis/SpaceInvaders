@@ -40,7 +40,7 @@ public class EnemyController : MonoBehaviour
         if (timeSinceStep > secPerStep)
         {
             timeSinceStep -= secPerStep;
-            enemyRoot.position += marchDir * widthPerEnemy * 05f;
+            enemyRoot.position += marchDir * widthPerEnemy * 0.5f;
 
             float hExtent = Camera.main.orthographicSize * Camera.main.aspect - widthPerEnemy;
             foreach (Transform enemyTransform in enemyRoot)

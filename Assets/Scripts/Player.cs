@@ -31,4 +31,12 @@ public class Player : MonoBehaviour
 
       }
     }
+
+    private void OnTriggerEnter2D(Collider2D collider2D)
+    {
+      if (collider2D.gameObject.name is "enemy1Prefab(Clone)" or "enemy2Prefab(Clone)" or "enemy3Prefab(Clone)")
+      {
+        Debug.Log("hit");
+      }
+    }
 }
